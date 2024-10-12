@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Personal Information -->
+    <section id="personal-info" class="card">
+      <img src="umair.jpg" alt="Profile Picture" class="profile-pic">
+      <h1>Umair</h1>
+      <p>Email: umairnawaz7228@gmail.com</p>
+      <p>Phone: 123456789</p>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="card">
+      <h2>Education</h2>
+      <p><strong>Matriculation</strong></p>
+      <p>U. A Foundation Sec. School (2023)</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card hidden">
+      <h2>Skills</h2>
+      <ul>
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>HTML & CSS</li>
+        <li>React.js</li>
+        <li>Python (Pandas, Numpy, Matplotlib)</li>
+        <li>SQL</li>
+        <li>Snowflake</li>
+        <li>AWS</li>
+      </ul>
+    </section>
+    <button id="toggle-skills" class="btn-primary">Show Skills</button>
+
+    <!-- Work Experience -->
+    <section id="experience" class="card">
+      <h2>Projects</h2>
+      <p><strong>Portfolio Website with Next.js</strong></p>
+      <p>Created an animated, responsive, functional and UI/UX friendly Portfolio website with Modren Technologies like Next.js, React.js Tailwind CSS and more.</p>
+      <p><strong>Portfolio Website</strong></p>
+      <p>Created a fully animated and responsive portfolio website with HTML, CSS and TypeScript</p>
+      <p><strong>Amazon Clone</strong></p>
+      <p>Created a frontend clone of Amazon with HTML and CSS</p>
+      <p><strong>Dashboard with Next.js</strong></p>
+      <p>Created a responsive and animated UI/UX friendly Dashboard with Next.js and Tailwind CSS</p>
+    </section>
+  </div>
+
+  <script type="module">
+    import { toggleSkills } from './script.js';
+
+    // Call the function to attach the event listener
+    toggleSkills();
+  </script>
+</body>
+</html>

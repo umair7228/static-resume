@@ -1,0 +1,117 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f9fafb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+  }
+  
+  /* Section Styling */
+  .card {
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  h1, h2 {
+    color: #1E3A8A; /* Dark Blue */
+    margin-bottom: 10px;
+  }
+  
+  /* Profile Picture */
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-position: top;
+    object-fit: cover;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Skills Section */
+  #skills ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0;
+    gap: 10px;
+  }
+  
+  #skills ul li {
+    background-color: #60A5FA; /* Light Blue */
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #1E3A8A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2563EB;
+  }
+  
+  /* Hide the skills section by default */
+  .hidden {
+    display: none;
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .btn-primary {
+      padding: 10px;
+    }
+  }
+  
